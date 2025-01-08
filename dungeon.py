@@ -25,11 +25,11 @@ def ost(music):
 #aqui puxa as informações dos bosses e do boss final
 def startar_dungeon():
     salas = [
-        Subsala("Sala 1", boss("Goblins", 12), "Bixos grotescos que simplesmente são desleais por natureza, abata um por um para a sua sobrevivência", ["agua", "gelo"], "\nHá algo que até átomos possam ficar parados? Acho que não... mas pode chegar perto disso"),
-        Subsala("Sala 2", boss("Minotauro", 12), "Quando você entra na sala, uma criatura vem direto na tua direção querendo te furar(la ele), mas você desvia e quando olha em direção à criatura, simplesmente um monstro raro está à sua frente... um Minotauro.", ["raio", "fogo"], "\nExploda tudo que há na sua frente que revelará o caminho."),
-        Subsala("Sala 3", boss("Ciclope", 12), "O monstro à sua frente é simplesmente um Ciclope, aquilo que está em sua frente é pulverizado com seu único olho horroroso(diga-se de passagem) talvez haja algum jeito de distraí-lo.", ["raio", "agua"], "\nHá algo tão forte quanto as correntezas em dias de chuva..."),
-        Subsala("Sala 4", boss("Serpente Gigante", 12), "Parece um desafio impossível para você, que está tremendo por causa dessa cobra gigantesca, há algo que se possa fazer?", ["agua", "raio"], "\nHá algo tão puro e belo que possa ficar instável?"),
-        Subsala("Sala do Final Boss", boss("Hidra", 16), "Simplesmente um dragão com várias cabeças, você nunca viu algo tão asqueroso na sua vida, mas era necessário enfrentar essa desgraça para terminar o desafio.", ["terra"], "\nDepois de tantas infusões falhas, você sente em seu coração um estrondo... mas será que é o suficiente?")
+        Subsala("Sala 1", boss("Goblins", 12), "[purple]Bixos grotescos que simplesmente são desleais por natureza, abata um por um para a sua sobrevivência[/purple]", ["agua", "gelo"], "\nHá algo que até átomos possam ficar parados? Acho que não... mas pode chegar perto disso"),
+        Subsala("Sala 2", boss("Minotauro", 12), "[blue]Quando você entra na sala, uma criatura vem direto na tua direção querendo te furar(la ele), mas você desvia e quando olha em direção à criatura, simplesmente um monstro raro está à sua frente... um Minotauro.[/blue]", ["raio", "fogo"], "\nExploda tudo que há na sua frente que revelará o caminho."),
+        Subsala("Sala 3", boss("Ciclope", 12), "[purple]O monstro à sua frente é simplesmente um Ciclope, aquilo que está em sua frente é pulverizado com seu único olho horroroso(diga-se de passagem) talvez haja algum jeito de distraí-lo.[/purple]", ["raio", "agua"], "\nHá algo tão forte quanto as correntezas em dias de chuva..."),
+        Subsala("Sala 4", boss("Serpente Gigante", 12), "[blue]Parece um desafio impossível para você, que está tremendo por causa dessa cobra gigantesca, há algo que se possa fazer?[/blue]", ["agua", "raio"], "\nHá algo tão puro e belo que possa ficar instável?"),
+        Subsala("Sala do Final Boss", boss("Hidra", 16), "[purple]Simplesmente um dragão com várias cabeças, você nunca viu algo tão asqueroso na sua vida, mas era necessário enfrentar essa desgraça para terminar o desafio.[/purple]", ["terra"], "\nDepois de tantas infusões falhas, você sente em seu coração um estrondo... mas será que é o suficiente?")
     ]
     return salas
 
