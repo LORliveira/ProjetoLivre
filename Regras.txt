@@ -1,17 +1,21 @@
+Caso de algum problema na hora de executar o "python main.py" no terminal, apenas dê olha no diretorio cd /local do diretorio/
+Na hora do combate, utilize as setinhas do teclados para utilizar o 1, 2 e os elementos escolhidos para atacar para facilitar em não ficar digitando toda hora! 😁
+
+
 Elementos para infusão
 O enigma ajudará a realizar a infusão
 
 Elementos: Fogo, agua, gelo, raio e terra
 
-fogo + agua(nessa ordem) = Vaporizar(4 de dano)
+fogo + agua = Vaporizar(4 de dano)
 
-raio + fogo(nessa ordem) = Sobrecarregar(4 de dano)
+raio + fogo = Sobrecarregar, explosão(4 de dano)
 
-gelo + agua(nessa ordem) = Congelar(4 de dano)
+gelo + agua = Congelar, para os inimigos(4 de dano)
 
-agua + raio(nessa ordem) = Eletrificar(4 de dano)
+raio + agua = Eletrificar(4 de dano)
 
-terra = elemento neutro(4 de dano) 
+terra = elemento neutro, não consegue reagir a outros elementos(4 de dano) 
 
 Escreva no terminal para jogar = fogo + agua(com espaçamentos),
 e para atacar o boss da mesma forma.
@@ -22,5 +26,8 @@ Quantidade de dash = 2
 
 Caso de algum problema na hora de executar o "python main.py" no terminal, apenas dê cd /local do diretorio/
 
-o jogo tem som... caso esteja muito alto, diminua o som no vscode da sua maquina
+
+O jogo tem som... caso esteja muito alto, diminua o som no vscode da sua maquina
+
+
 
