@@ -1,0 +1,23 @@
+Elementos para infusão
+O enigma ajudará a realizar a infusão
+
+Elementos: Fogo, agua, gelo, raio e terra
+
+fogo + agua(nessa ordem) = Vaporizar(4 de dano)
+
+raio + fogo(nessa ordem) = Sobrecarregar(4 de dano)
+
+gelo + agua(nessa ordem) = Congelar(4 de dano)
+
+agua + raio(nessa ordem) = Eletrificar(4 de dano)
+
+terra = elemento neutro(4 de dano) 
+
+Escreva no terminal para jogar = fogo + agua(com espaçamentos),
+e para atacar o boss da mesma forma.
+
+Vida do mago = 8
+Vida do boss = 12
+Quantidade de dash = 2
+
+
