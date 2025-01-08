@@ -22,5 +22,5 @@ Quantidade de dash = 2
 
 Caso de algum problema na hora de executar o "python main.py" no terminal, apenas dê cd /local do diretorio/
 
-o jogo tem som... caso esteja muito alto, diminua na sua maquina
+o jogo tem som... caso esteja muito alto, diminua o som no vscode da sua maquina
 
