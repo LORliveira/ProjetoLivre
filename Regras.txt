@@ -1,6 +1,7 @@
 Caso de algum problema na hora de executar o "python main.py" no terminal, apenas dê olha no diretorio cd /local do diretorio/
 Na hora do combate, utilize as setinhas do teclados para utilizar o 1, 2 e os elementos escolhidos para atacar para facilitar em não ficar digitando toda hora! 😁
 
+O jogo tem som... caso esteja muito alto, diminua o som no vscode da sua maquina
 
 Elementos para infusão
 O enigma ajudará a realizar a infusão
@@ -23,8 +24,6 @@ e para atacar o boss da mesma forma.
 Vida do mago = 8
 Vida do boss = 12
 Quantidade de dash = 2
-
-Caso de algum problema na hora de executar o "python main.py" no terminal, apenas dê cd /local do diretorio/
 
 
 O jogo tem som... caso esteja muito alto, diminua o som no vscode da sua maquina
