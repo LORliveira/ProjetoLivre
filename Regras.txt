@@ -20,4 +20,6 @@ Vida do mago = 8
 Vida do boss = 12
 Quantidade de dash = 2
 
+Caso de algum problema na hora de executar o "python main.py" no terminal, apenas dê cd /local do diretorio/
+
 
