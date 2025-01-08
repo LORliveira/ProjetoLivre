@@ -28,9 +28,11 @@ def startar_dungeon():
         Subsala("Sala 1", boss("Goblins", 12), "[purple]Bixos grotescos que simplesmente são desleais por natureza, abata um por um para a sua sobrevivência[/purple]", ["agua", "gelo"], "\nHá algo que até átomos possam ficar parados? Acho que não... mas pode chegar perto disso"),
         Subsala("Sala 2", boss("Minotauro", 12), "[blue]Quando você entra na sala, uma criatura vem direto na tua direção querendo te furar(la ele), mas você desvia e quando olha em direção à criatura, simplesmente um monstro raro está à sua frente... um Minotauro.[/blue]", ["raio", "fogo"], "\nExploda tudo que há na sua frente que revelará o caminho."),
         Subsala("Sala 3", boss("Ciclope", 12), "[purple]O monstro à sua frente é simplesmente um Ciclope, aquilo que está em sua frente é pulverizado com seu único olho horroroso(diga-se de passagem) talvez haja algum jeito de distraí-lo.[/purple]", ["raio", "agua"], "\nHá algo tão forte quanto as correntezas em dias de chuva..."),
-        Subsala("Sala 4", boss("Serpente Gigante", 12), "[blue]Parece um desafio impossível para você, que está tremendo por causa dessa cobra gigantesca, há algo que se possa fazer?[/blue]", ["agua", "raio"], "\nHá algo tão puro e belo que possa ficar instável?"),
-        Subsala("Sala do Final Boss", boss("Hidra", 16), "[purple]Simplesmente um dragão com várias cabeças, você nunca viu algo tão asqueroso na sua vida, mas era necessário enfrentar essa desgraça para terminar o desafio.[/purple]", ["terra"], "\nDepois de tantas infusões falhas, você sente em seu coração um estrondo... mas será que é o suficiente?")
+        Subsala("Sala 4", boss("Serpente Gigante", 12), "[blue]Parece um desafio impossível para você, que está tremendo por causa dessa cobra gigantesca, há algo que se possa fazer?[/blue]", ["agua", "raio"], "\nHá algo tão puro e belo que possa ficar instável?"),   
     ]
+    final_boss = SalaBossFinal("Sala do Final Boss", boss("Hidra", 16), "Um dragão com várias cabeças, asqueroso e aterrorizante sua vida, mas era necessario enfrentar essa desgraça para terminar o desafio.",["terra"], "Depois de tantas infusões falhas, você sente em seu coração um estrondo... mas será que é o suficiente?",)
+    final_boss.salas = salas
+    salas.append(final_boss)
     return salas
 
 def enigma(dica, debuffar, player, boss):
@@ -87,8 +89,8 @@ def gameplay():
 
         sala_escolhida = salas[int(escolha) - 1]
 
-        if sala_escolhida.nome == "[bold red]Sala do boss Final[/bold red]" and not all(s.matou_boss for s in salas[:-1]):
-            console.print("[bold red]Você ainda é fraco para enfrentar o que vem nessa sala, lute com mais chefes para obter xp meu caro[/bold red]")
+        if isinstance(sala_escolhida, SalaBossFinal) and not sala_escolhida.desbloqueado():
+            print("Você ainda é fraco para enfrentar o que vem nessa sala, lute com mais chefes para obter XP meu caro!")
             continue
 
         if sala_escolhida.matou_boss:
