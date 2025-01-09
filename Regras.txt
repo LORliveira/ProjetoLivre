@@ -3,6 +3,14 @@ Na hora do combate, utilize as setinhas do teclados para utilizar o 1, 2 e os el
 
 O jogo tem som... caso esteja muito alto, diminua o som no vscode da sua maquina
 
+bibliotecas usadas
+
+random
+os
+sys
+rich (precisa dar pip install)
+pygame (precisa dar pip install)
+
 Elementos para infusão
 O enigma ajudará a realizar a infusão
 
